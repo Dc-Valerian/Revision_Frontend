@@ -1,5 +1,6 @@
 import React from 'react';
 import img from "../../assets/logo.jpg"
+import Button from '../common/Button';
 
 const Header = () => {
   return (
@@ -7,11 +8,15 @@ const Header = () => {
        <div className='w-11/12 flex justify-between'>
         <img src={img} alt="logo" className='h-14'/>
 
-        <div className="flex items-center  gap-5">
-            <p className='flex items-center' >Home</p>
+        <div className="flex items-center  gap-5 m-4 text-base text-white">
+            <p className='' >Home</p>
             <p  className=''>About</p>
             <p  className=''>Route</p>
             <p  className=''>Contact</p>
+            <div className='flex'>
+                <Button content='Sign In'/>
+                <Button content='Sign Up'/>
+            </div>
         </div>
        </div>
     </div>
